@@ -18,7 +18,10 @@ function addItem() {
             <button class="px-4 py-2 rounded bg-slate-900 mt-3 deleteButton">Done</button>
         </div>
     `;
-}
+    document.getElementById('taskName').value = '';
+     document.getElementById('taskName').value = '';
+     document.getElementById('taskTime').value = '';
+};
 
 document.getElementById('taskContainer').addEventListener('click', function (e) {
     
