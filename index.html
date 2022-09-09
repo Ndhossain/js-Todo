@@ -58,35 +58,14 @@
         type="submit"
         value="Submit"
         id="submitButton"
-        onclick="addItem()"
+        onclick="setTask()"
       />
       <p class="text-center font-medium" id="errorMessage"></p>
     </div>
+    <div class="my-5 w-10/12 mx-auto">
+      <button onclick='removeAllTask()' class="px-4 py-2 rounded bg-slate-900 mt-3 float-right">Clear All Tasks</button>
+    </div>
     <div id="taskContainer" class="flex flex-col w-10/12 gap-4 mx-auto justify-center">
-      <div class="p-5 bg-white/30 rounded-xl tasks">
-        <p class="text-lg">
-          <span class="font-medium">Task Name: </span>Compelete homework
-        </p>
-        <p class="text-lg">
-          <span class="font-medium">Compeletion Date: </span>11-07-2022
-        </p>
-        <p class="text-lg">
-          <span class="font-medium">Compeletion Time: </span>01:00pm
-        </p>
-        <button class="px-4 py-2 rounded bg-slate-900 mt-3 deleteButton">Done</button>
-      </div>
-      <div class="p-5 bg-white/30 rounded-xl tasks">
-        <p class="text-lg">
-          <span class="font-medium">Task Name: </span>Compelete homework daily
-        </p>
-        <p class="text-lg">
-          <span class="font-medium">Compeletion Date: </span>2022-07-11
-        </p>
-        <p class="text-lg">
-          <span class="font-medium">Compeletion Time: </span>01:00
-        </p>
-        <button class="px-4 py-2 rounded bg-slate-900 mt-3 deleteButton">Done</button>
-      </div>
     </div>
     <script src="js/script.js"></script>
   </body>
